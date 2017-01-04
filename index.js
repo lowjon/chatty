@@ -6,7 +6,7 @@ const app = express()
 app.use(express.static('assets'))
 app.use(bodyParser.json())
 
-let messages = []d  
+let messages = []
 
 app.get('/messages', function (req, res, next) {
   res.status(200).json({ messages: messages})
